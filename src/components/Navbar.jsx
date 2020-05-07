@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDarkMode } from '../hooks/useDarkMode'
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useDarkMode(false);
+  const [darkMode, setDarkMode] = useDarkMode('dark');
   const toggleMode = e => {
     e.preventDefault();
     setDarkMode(!darkMode);
